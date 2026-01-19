@@ -9,20 +9,84 @@
 
 # print(rgb_colors)
 
-# from turtle import Turtle, Screen
-import turtle as t
-import heroes
+from turtle import Turtle, Screen
+# import heroes
 
-print(heroes.gen())
-toby = t.Turtle()
-toby.shape("turtle")
-toby.color("green", "yellow")
+# print(heroes.gen())
+toby = Turtle()
+# toby.shape("turtle")
+# toby.color("green", "yellow")
+
+for _ in range(3):
+    toby.forward(20)
+    toby.right(120)
+    toby.pendown()
+    toby.forward(20)
 
 for _ in range(4):
-    toby.forward(100)
-
+    toby.forward(20)
     toby.right(90)
+    toby.pendown()
+    toby.forward(20)
+
+for _ in range(5):
+    toby.forward(20)
+    toby.right(72)
+    toby.pendown()
+    toby.forward(20)
+
+for _ in range(6):
+    toby.forward(20)
+    toby.right(60)
+    toby.pendown()
+    toby.forward(20)
+
+for _ in range(7):
+    toby.forward(20)
+    toby.right(51.43)
+    toby.pendown()
+    toby.forward(20)    
+
+for _ in range(8):
+    toby.forward(20)
+    toby.right(45)
+    toby.pendown()
+    toby.forward(20)
+
+for _ in range(9):
+    toby.forward(20)
+    toby.right(40)
+    toby.pendown()
+    toby.forward(20)
+
+for _ in range(10):
+    toby.forward(20)
+    toby.right(36)
+    toby.pendown()
+    toby.forward(20)
 
 
-screen = t.Screen()
+    
+    
+    
+  
+
+    
+
+ # for _ in range(4):
+    
+ #     toby.forward(20)
+
+ #     toby.right(90)
+
+# def turtle_move():
+#     toby.forward(20)
+#     toby.right(90)
+
+# turtle_move()
+# turtle_move()
+# turtle_move()
+# turtle_move()
+
+screen = Screen()
 screen.exitonclick()
