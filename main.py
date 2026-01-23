@@ -10,68 +10,35 @@
 # print(rgb_colors)
 
 from turtle import Turtle, Screen
-# import heroes
+import random
 
-# print(heroes.gen())
 toby = Turtle()
-# toby.shape("turtle")
-# toby.color("green", "yellow")
 
-for _ in range(3):
-    toby.pencolor("red")
-    toby.forward(20)
-    toby.right(120)
-    toby.pendown()
-    toby.forward(20)
 
-for _ in range(4):
-    toby.pencolor("dark orange")
-    toby.forward(20)
-    toby.right(90)
-    toby.pendown()
-    toby.forward(20)
+toby.hideturtle()
 
-for _ in range(5):
-    toby.pencolor("yellow")
-    toby.forward(20)
-    toby.right(72)
-    toby.pendown()
-    toby.forward(20)
+colors = [
+    "hot pink",
+    "dark orange",
+    "yellow",
+    "lime",
+    "light sky blue",
+    "indigo",
+    "dark magenta",
+    "turquoise",
+]
 
-for _ in range(6):
-    toby.pencolor("lime green")
-    toby.forward(20)
-    toby.right(60)
-    toby.pendown()
-    toby.forward(20)
 
-for _ in range(7):
-    toby.pencolor("blue")
-    toby.forward(20)
-    toby.right(51.43)
-    toby.pendown()
-    toby.forward(20)    
+def draw_shape(num_sides):
+    angle = 360 / num_sides
+    for _ in range(num_sides):
+        toby.forward(100)
+        toby.right(angle)
 
-for _ in range(8):
-    toby.pencolor("indigo")
-    toby.forward(20)
-    toby.right(45)
-    toby.pendown()
-    toby.forward(20)
 
-for _ in range(9):
-    toby.pencolor("purple")
-    toby.forward(20)
-    toby.right(40)
-    toby.pendown()
-    toby.forward(20)
-
-for _ in range(10):
-    toby.pencolor("hot pink")
-    toby.forward(20)
-    toby.right(36)
-    toby.pendown()
-    toby.forward(20)
+for shape_side_n in range(3, 11):
+    toby.color(random.choice(colors))
+    draw_shape(shape_side_n)
 
 
     
@@ -81,20 +48,7 @@ for _ in range(10):
 
     
 
- # for _ in range(4):
-    
- #     toby.forward(20)
 
- #     toby.right(90)
-
-# def turtle_move():
-#     toby.forward(20)
-#     toby.right(90)
-
-# turtle_move()
-# turtle_move()
-# turtle_move()
-# turtle_move()
 
 screen = Screen()
 screen.exitonclick()
