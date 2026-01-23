@@ -18,48 +18,56 @@ toby = Turtle()
 # toby.color("green", "yellow")
 
 for _ in range(3):
+    toby.pencolor("red")
     toby.forward(20)
     toby.right(120)
     toby.pendown()
     toby.forward(20)
 
 for _ in range(4):
+    toby.pencolor("dark orange")
     toby.forward(20)
     toby.right(90)
     toby.pendown()
     toby.forward(20)
 
 for _ in range(5):
+    toby.pencolor("yellow")
     toby.forward(20)
     toby.right(72)
     toby.pendown()
     toby.forward(20)
 
 for _ in range(6):
+    toby.pencolor("lime green")
     toby.forward(20)
     toby.right(60)
     toby.pendown()
     toby.forward(20)
 
 for _ in range(7):
+    toby.pencolor("blue")
     toby.forward(20)
     toby.right(51.43)
     toby.pendown()
     toby.forward(20)    
 
 for _ in range(8):
+    toby.pencolor("indigo")
     toby.forward(20)
     toby.right(45)
     toby.pendown()
     toby.forward(20)
 
 for _ in range(9):
+    toby.pencolor("purple")
     toby.forward(20)
     toby.right(40)
     toby.pendown()
     toby.forward(20)
 
 for _ in range(10):
+    toby.pencolor("hot pink")
     toby.forward(20)
     toby.right(36)
     toby.pendown()
